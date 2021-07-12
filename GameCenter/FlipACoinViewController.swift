@@ -60,23 +60,7 @@ class FlipACoinViewController: UIViewController , UITextFieldDelegate
         return true
     }
         
-//        //如果空白跳出警告
-//        if QuestionTextField.text?.isEmpty == nil ,FrontAnswerTextField.text?.isEmpty == nil , BackAnswerTextField.text?.isEmpty == nil
-//        {
-//            return true
-//        }else
-//        {
-//            let controller = UIAlertController(title: "你漏寫囉", message: "填寫你的問題答案！！", preferredStyle: .alert)
-//                       let okAction = UIAlertAction(title: "填寫", style: .default, handler: nil)
-//                       controller.addAction(okAction)
-//                       present(controller, animated: true, completion: nil)
-//                       return false
-//        }
-//
-//
-//
-//    }
-//
+
     //點擊空白鍵盤消失
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -97,12 +81,12 @@ class FlipACoinViewController: UIViewController , UITextFieldDelegate
         }
         
         //回答文字改變
-        if Number == 0 || QuestionTextField.text?.isEmpty == false
+        if Number == 0 , QuestionTextField.text?.isEmpty == false
         {
-            AnswerLabel.text = "結果為正！銅板建議你要\(AnswerLabel.text!)"
-        }else if Number == 1 || QuestionTextField.text?.isEmpty == false
+            AnswerLabel.text = "結果為正！銅板建議你要\(FrontAnswerTextField.text!)"
+        }else if Number == 1 , QuestionTextField.text?.isEmpty == false
         {
-            AnswerLabel.text = "結果為負！銅板建議你要\(AnswerLabel.text!)"
+            AnswerLabel.text = "結果為負！銅板建議你要\(BackAnswerTextField.text!)"
         }else
         {
             AnswerLabel.text = "沒有問題沒有答案"
@@ -110,10 +94,24 @@ class FlipACoinViewController: UIViewController , UITextFieldDelegate
         
     }
     
+    //清除鍵
     
     
     
-    
+    @IBAction func ClearButton(_ sender: UIButton)
+    {
+        //問題清空
+        QuestionTextField.text = ""
+        QuestionLabel.text = ""
+        //正面回答清空
+        FrontAnswerTextField.text = ""
+        //反面回答清空
+        BackAnswerTextField.text = ""
+        //答案清空
+        AnswerLabel.text = ""
+        
+        
+    }
     
     
 }
