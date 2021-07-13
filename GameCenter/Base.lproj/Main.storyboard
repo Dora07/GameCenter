@@ -18,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahZ-Xf-SAi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1418359578" green="0.16006845240000001" blue="0.1921614707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gamearcadecontroler" translatesAutoresizingMaskIntoConstraints="NO" id="Guv-ui-INX">
-                                <rect key="frame" x="-128" y="511" width="612" height="532"/>
+                                <rect key="frame" x="-128" y="492" width="612" height="551"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jz8-p3-esa">
-                                <rect key="frame" x="75" y="215" width="239" height="220"/>
+                                <rect key="frame" x="0.0" y="157" width="414" height="417"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="coinA"/>
+                                <state key="normal" title="Button" image="cointosu"/>
                                 <connections>
                                     <segue destination="qhX-BX-4Xs" kind="showDetail" id="6ou-f1-FY5"/>
                                 </connections>
@@ -152,11 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhC-kw-Stt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.62318840579712" y="-40.178571428571423"/>
+            <point key="canvasLocation" x="3174" y="-334"/>
         </scene>
     </scenes>
     <resources>
         <image name="coinA" width="692" height="692"/>
+        <image name="cointosu" width="1380" height="1370"/>
         <image name="gamearcadecontroler" width="400" height="312"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
