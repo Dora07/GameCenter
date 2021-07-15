@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		867719E426A0858600C56EA7 /* SaikonkorokoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867719E326A0858600C56EA7 /* SaikonkorokoroViewController.swift */; };
 		869036A02675C71900BC5141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690369F2675C71900BC5141 /* AppDelegate.swift */; };
 		869036A22675C71900BC5141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869036A12675C71900BC5141 /* SceneDelegate.swift */; };
 		869036A42675C71900BC5141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869036A32675C71900BC5141 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		867719E326A0858600C56EA7 /* SaikonkorokoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaikonkorokoroViewController.swift; sourceTree = "<group>"; };
 		8690369C2675C71900BC5141 /* GameCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690369F2675C71900BC5141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869036A12675C71900BC5141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				869036D22675F3F800BC5141 /* FlipACoinViewController.swift */,
 				869036A32675C71900BC5141 /* ViewController.swift */,
 				869036A52675C71900BC5141 /* Main.storyboard */,
+				867719E326A0858600C56EA7 /* SaikonkorokoroViewController.swift */,
 				869036A82675C71A00BC5141 /* Assets.xcassets */,
 				869036AA2675C71A00BC5141 /* LaunchScreen.storyboard */,
 				869036AD2675C71A00BC5141 /* Info.plist */,
@@ -265,6 +268,7 @@
 				869036A42675C71900BC5141 /* ViewController.swift in Sources */,
 				869036A02675C71900BC5141 /* AppDelegate.swift in Sources */,
 				869036A22675C71900BC5141 /* SceneDelegate.swift in Sources */,
+				867719E426A0858600C56EA7 /* SaikonkorokoroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

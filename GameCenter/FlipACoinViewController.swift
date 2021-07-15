@@ -71,6 +71,8 @@ class FlipACoinViewController: UIViewController , UITextFieldDelegate
         let CoinImage :[UIImage?] = [UIImage(named: "coinA"),UIImage(named: "coinB")]
         let Number = Int.random(in: 0...1)
         CoinButton.setImage(CoinImage[Number], for: .normal)
+        
+        
         //問題文字改變
         if QuestionTextField.text?.isEmpty == true{
             QuestionLabel.text = "你沒有問題來幹嘛?"
