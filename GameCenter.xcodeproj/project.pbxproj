@@ -17,6 +17,7 @@
 		869036B72675C71A00BC5141 /* GameCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869036B62675C71A00BC5141 /* GameCenterTests.swift */; };
 		869036C22675C71A00BC5141 /* GameCenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869036C12675C71A00BC5141 /* GameCenterUITests.swift */; };
 		869036D32675F3F800BC5141 /* FlipACoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869036D22675F3F800BC5141 /* FlipACoinViewController.swift */; };
+		86EBA2DB26A802F600157BEE /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		869036C12675C71A00BC5141 /* GameCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterUITests.swift; sourceTree = "<group>"; };
 		869036C32675C71A00BC5141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		869036D22675F3F800BC5141 /* FlipACoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipACoinViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				869036A32675C71900BC5141 /* ViewController.swift */,
 				869036A52675C71900BC5141 /* Main.storyboard */,
 				867719E326A0858600C56EA7 /* SaikonkorokoroViewController.swift */,
+				86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */,
 				869036A82675C71A00BC5141 /* Assets.xcassets */,
 				869036AA2675C71A00BC5141 /* LaunchScreen.storyboard */,
 				869036AD2675C71A00BC5141 /* Info.plist */,
@@ -267,6 +270,7 @@
 				869036D32675F3F800BC5141 /* FlipACoinViewController.swift in Sources */,
 				869036A42675C71900BC5141 /* ViewController.swift in Sources */,
 				869036A02675C71900BC5141 /* AppDelegate.swift in Sources */,
+				86EBA2DB26A802F600157BEE /* TicTacToeViewController.swift in Sources */,
 				869036A22675C71900BC5141 /* SceneDelegate.swift in Sources */,
 				867719E426A0858600C56EA7 /* SaikonkorokoroViewController.swift in Sources */,
 			);

@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="eh0-MB-sbF">
-                                        <rect key="frame" x="0.0" y="10" width="1200" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1391" height="400"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-fi-tHv">
@@ -51,6 +51,14 @@
                                                     <segue destination="EIS-AG-xTw" kind="show" id="zAd-qN-JSL"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-zL-bK6">
+                                                <rect key="frame" x="955" y="-3" width="400" height="400"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <connections>
+                                                    <segue destination="k46-wA-Vaj" kind="show" id="5Up-yD-VMl"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="fT4-3t-0mR"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,7 +68,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="v1R-v0-YfA"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="1000" height="0.0"/>
+                                        <size key="value" width="1400" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
@@ -70,11 +78,82 @@
                     </view>
                     <connections>
                         <outlet property="CointosuButton" destination="NZA-fi-tHv" id="Kkf-t1-Ufa"/>
+                        <outlet property="SaiKoroKoroButton" destination="yv8-aV-TW8" id="7bG-Bs-7cz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tmC-Pd-1qd">
+            <objects>
+                <viewController id="k46-wA-Vaj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UoJ-OB-lsv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-ua-Uhk">
+                                <rect key="frame" x="30" y="70" width="355" height="355"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7O-AE-jUR">
+                                        <rect key="frame" x="0.0" y="8" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YD6-7l-LJ0">
+                                        <rect key="frame" x="0.0" y="127" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-k3-Ape">
+                                        <rect key="frame" x="0.0" y="247" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Wx-Dib">
+                                        <rect key="frame" x="128" y="8" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-Ad-45x">
+                                        <rect key="frame" x="128" y="127" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shh-Va-4db">
+                                        <rect key="frame" x="128" y="247" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-jn-PVq">
+                                        <rect key="frame" x="256" y="8" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJe-c4-6oS">
+                                        <rect key="frame" x="256" y="127" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nic-Ns-ubh">
+                                        <rect key="frame" x="256" y="247" width="99" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LJM-ca-rlk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GM6-1c-Iuc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rp-gf-Nld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.40579710144937" y="555.80357142857144"/>
         </scene>
         <!--Saikonkorokoro View Controller-->
         <scene sceneID="h3E-Fa-Mrc">
@@ -314,6 +393,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
