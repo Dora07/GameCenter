@@ -85,60 +85,60 @@
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Tic Tac Toe View Controller-->
         <scene sceneID="tmC-Pd-1qd">
             <objects>
-                <viewController id="k46-wA-Vaj" sceneMemberID="viewController">
+                <viewController id="k46-wA-Vaj" customClass="TicTacToeViewController" customModule="GameCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UoJ-OB-lsv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-ua-Uhk">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-ua-Uhk" customClass="TicTacToeDrawView" customModule="GameCenter" customModuleProvider="target">
                                 <rect key="frame" x="30" y="70" width="355" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7O-AE-jUR">
-                                        <rect key="frame" x="0.0" y="8" width="99" height="100"/>
+                                        <rect key="frame" x="0.0" y="8" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YD6-7l-LJ0">
-                                        <rect key="frame" x="0.0" y="127" width="99" height="100"/>
+                                        <rect key="frame" x="0.0" y="128" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-k3-Ape">
-                                        <rect key="frame" x="0.0" y="247" width="99" height="100"/>
+                                        <rect key="frame" x="0.0" y="248" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b57-Wx-Dib">
-                                        <rect key="frame" x="128" y="8" width="99" height="100"/>
+                                        <rect key="frame" x="120" y="8" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-Ad-45x">
-                                        <rect key="frame" x="128" y="127" width="99" height="100"/>
+                                        <rect key="frame" x="120" y="128" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shh-Va-4db">
-                                        <rect key="frame" x="128" y="247" width="99" height="100"/>
+                                        <rect key="frame" x="120" y="248" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HjS-jn-PVq">
-                                        <rect key="frame" x="256" y="8" width="99" height="100"/>
+                                        <rect key="frame" x="240" y="8" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJe-c4-6oS">
-                                        <rect key="frame" x="256" y="127" width="99" height="100"/>
+                                        <rect key="frame" x="240" y="128" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nic-Ns-ubh">
-                                        <rect key="frame" x="256" y="247" width="99" height="100"/>
+                                        <rect key="frame" x="240" y="248" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </view>
@@ -150,6 +150,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="GM6-1c-Iuc"/>
+                    <connections>
+                        <outletCollection property="Squares" destination="e7O-AE-jUR" collectionClass="NSMutableArray" id="clb-yR-y29"/>
+                        <outletCollection property="Squares" destination="b57-Wx-Dib" collectionClass="NSMutableArray" id="b8Q-rF-hJ2"/>
+                        <outletCollection property="Squares" destination="HjS-jn-PVq" collectionClass="NSMutableArray" id="p5q-6m-F1w"/>
+                        <outletCollection property="Squares" destination="YD6-7l-LJ0" collectionClass="NSMutableArray" id="XPp-45-wJY"/>
+                        <outletCollection property="Squares" destination="IgW-Ad-45x" collectionClass="NSMutableArray" id="eGX-td-ujL"/>
+                        <outletCollection property="Squares" destination="jJe-c4-6oS" collectionClass="NSMutableArray" id="U2x-lA-WqF"/>
+                        <outletCollection property="Squares" destination="Wl5-k3-Ape" collectionClass="NSMutableArray" id="jg1-dM-UwR"/>
+                        <outletCollection property="Squares" destination="Shh-Va-4db" collectionClass="NSMutableArray" id="27n-yZ-gJH"/>
+                        <outletCollection property="Squares" destination="Nic-Ns-ubh" collectionClass="NSMutableArray" id="94V-Yj-qet"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rp-gf-Nld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
