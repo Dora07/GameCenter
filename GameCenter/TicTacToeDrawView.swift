@@ -1,9 +1,3 @@
-//
-//  TicTacToeDrawView.swift
-//  GameCenter
-//
-//  Created by 謝孟芩 on 2021/7/23.
-//
 
 import UIKit
 
@@ -17,7 +11,7 @@ class TicTacToeDrawView: UIView {
         let squareWidth: CGFloat = 100
         let lineWidth: CGFloat = 20
         
-        var y = squareWidth + lineWidth 
+        var y = squareWidth + lineWidth
         path.move(to: CGPoint(x: 0, y: y))
         path.addLine(to: CGPoint(x: rect.width, y: y))
         
@@ -34,7 +28,7 @@ class TicTacToeDrawView: UIView {
         path.addLine(to: CGPoint(x: x, y: rect.height))
         
         path.lineWidth = lineWidth
-        UIColor.purple.setStroke()
+        UIColor.systemTeal.setStroke()
         path.stroke()
     }
   
