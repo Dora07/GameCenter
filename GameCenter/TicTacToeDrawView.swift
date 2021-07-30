@@ -9,7 +9,7 @@ class TicTacToeDrawView: UIView {
         // Drawing code
         let path = UIBezierPath()
         let squareWidth: CGFloat = 100
-        let lineWidth: CGFloat = 20
+        let lineWidth: CGFloat = 15
         
         var y = squareWidth + lineWidth
         path.move(to: CGPoint(x: 0, y: y))
