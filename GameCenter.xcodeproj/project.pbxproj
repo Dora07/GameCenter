@@ -20,6 +20,7 @@
 		86EBA2DB26A802F600157BEE /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */; };
 		86EBA2F726A9D1AD00157BEE /* TicTacToeDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2F626A9D1AD00157BEE /* TicTacToeDrawView.swift */; };
 		86EBA2FC26AABEF300157BEE /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2FB26AABEF300157BEE /* InfoView.swift */; };
+		86EBA30126B92FA300157BEE /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA30026B92FA200157BEE /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		86EBA2F626A9D1AD00157BEE /* TicTacToeDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeDrawView.swift; sourceTree = "<group>"; };
 		86EBA2FB26AABEF300157BEE /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		86EBA30026B92FA200157BEE /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */,
 				86EBA2F626A9D1AD00157BEE /* TicTacToeDrawView.swift */,
 				86EBA2FB26AABEF300157BEE /* InfoView.swift */,
+				86EBA30026B92FA200157BEE /* Grid.swift */,
 				869036A52675C71900BC5141 /* Main.storyboard */,
 				869036A82675C71A00BC5141 /* Assets.xcassets */,
 				869036AA2675C71A00BC5141 /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				86EBA2DB26A802F600157BEE /* TicTacToeViewController.swift in Sources */,
 				869036A22675C71900BC5141 /* SceneDelegate.swift in Sources */,
 				867719E426A0858600C56EA7 /* SaikonkorokoroViewController.swift in Sources */,
+				86EBA30126B92FA300157BEE /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

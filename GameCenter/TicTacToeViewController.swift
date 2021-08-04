@@ -3,7 +3,7 @@ import UIKit
 
 class TicTacToeViewController: UIViewController
 {
-
+    let grid: Grid = Grid()
     
     @IBOutlet var Squares: [UIView]!
     
@@ -68,7 +68,8 @@ class TicTacToeViewController: UIViewController
     if sender.state == .ended
     { var MaxIntersectionArea :CGFloat = 0
         var TargetSquare :UIView?
-        for square in Squares
+        var TargetIndex:Int?
+        for (i ,square) in Squares.enumerated()
         {
             let InterSectionFrame =  square.frame.intersection(label.frame)
             let Area = InterSectionFrame.width * InterSectionFrame.height
@@ -76,11 +77,12 @@ class TicTacToeViewController: UIViewController
             {
                 MaxIntersectionArea = Area
                 TargetSquare = square
+                TargetIndex = i
             }
         }
-        if let TargerSquare = TargetSquare
+        if let TargerSquare = TargetSquare, let TargetIndex = TargetIndex,grid.IsSquareEmpty(index:TargetIndex)
         {
-            Placepiece(label, on: TargerSquare)
+            Placepiece(label,on:TargerSquare,index:TargetIndex)
         }else
         {
             PiceBackToStartLocation(label: label)
@@ -105,7 +107,7 @@ class TicTacToeViewController: UIViewController
     
    
     
-    func Placepiece(_ label :UILabel ,on sqauare:UIView )
+    func Placepiece(_ label :UILabel ,on sqauare:UIView,index : Int)
     {
         var OriginalPieceCenter = CGPoint.zero
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, options: [], animations:{
@@ -114,7 +116,7 @@ class TicTacToeViewController: UIViewController
             label.center = sqauare.center
         })
         {(_)in
-            self.FinishCurrentTurn(label: label, originalPieceCenter: OriginalPieceCenter)
+            self.FinishCurrentTurn(label: label, index:index,originalPieceCenter: OriginalPieceCenter)
         }
         
     }
@@ -134,23 +136,116 @@ class TicTacToeViewController: UIViewController
     
     
     
+    var OccupyPices = [UILabel]()
     
-    
-    func FinishCurrentTurn(label:UILabel, originalPieceCenter:CGPoint)
+    func FinishCurrentTurn(label:UILabel, index:Int,originalPieceCenter:CGPoint)
     {
+        OccupyPices.append(label)
      let NewLabel = CreatPieceLabel(label: label)
         NewLabel.center = originalPieceCenter
         view.addSubview(NewLabel)
         
+        let NextLabel : UILabel
+        
         if label == XLabel
-        { XLabel = NewLabel
+        {  self.grid.Occupy(piece: .X, on: index)
+            XLabel = NewLabel
             TakeTurn(label: OLabel)
+            NextLabel = OLabel
         }else
-        {
+        { self.grid.Occupy(piece: .O, on: index)
             OLabel = NewLabel
             TakeTurn(label: XLabel)
+            NextLabel = XLabel
+        }
+        if grid.WinnerLines.isEmpty == false
+        { grid.WinnerLines.forEach{(indexs)in
+            ShowWinLineAnimation(startPoint: Squares[indexs.first!].center, endPoint: Squares[indexs.last!].center)
+        }
+            
+        }
+            else if grid.IsTie
+            {
+                infoView.Show(text: "ドロー")
+            }else
+            {
+                TakeTurn(label: NextLabel)
+            }
+        
+    }
+    
+    @IBAction func CloseInfoView(_sender:Any)
+    {
+        infoView.Close()
+        if grid.Winner != nil || grid.IsTie
+        {
+            NewGame()
         }
     }
     
+    func NewGame()
+    { grid.Clear()
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 2, delay: 1, options: [], animations: {
+            self.OccupyPices.forEach { (piece)in piece.alpha = 0
+                
+            }
+            
+        }) {(_)in
+            self.OccupyPices.forEach {(piece)in piece.removeFromSuperview()
+        }
+            self.OccupyPices.removeAll()
+            self.TakeTurn(label: self.OLabel)
+        }
+        
+    }
+    
+    
+    func ShowWinLineAnimation(startPoint:CGPoint,endPoint:CGPoint)
+    {
+        let Path = UIBezierPath()
+        Path.move(to: startPoint)
+        Path.addLine(to: endPoint)
+        
+        let ShapeLayer = CAShapeLayer()
+        ShapeLayer.path = Path.cgPath
+        ShapeLayer.strokeColor = UIColor.red.cgColor
+        ShapeLayer.lineWidth = 15
+        ShapeLayer.lineCap = .round
+        
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(3)
+        
+        let StrokeAnimation = CABasicAnimation(keyPath: #keyPath(CAShapeLayer.strokeEnd))
+        StrokeAnimation.fromValue = 0
+        StrokeAnimation.toValue = 1
+        CATransaction.setCompletionBlock
+        {
+            ShapeLayer.removeFromSuperlayer()
+            
+            if let Winner = self.grid.Winner
+            {
+                if Winner == Grid.Piece.O
+                {
+                    self.infoView.Show(text: "おめでとう！O勝った！")
+                }else
+                {
+                    self.infoView.Show(text: "おめでとう！X勝った！")
+                }
+            }
+            
+        }
+        
+        ShapeLayer.add(StrokeAnimation, forKey: nil)
+        view.layer.addSublayer(ShapeLayer)
+        CATransaction.commit()
+        
+    }
+    
+    
+    
+    
+    
+    
     
 }
+
