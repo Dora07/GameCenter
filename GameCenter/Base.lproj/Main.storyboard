@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="eh0-MB-sbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="1391" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1858" height="400"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-fi-tHv">
@@ -59,6 +59,14 @@
                                                     <segue destination="k46-wA-Vaj" kind="show" id="5Up-yD-VMl"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5h-Ef-WNS">
+                                                <rect key="frame" x="1427" y="0.0" width="400" height="400"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <connections>
+                                                    <segue destination="pPf-W6-sHH" kind="show" id="GD3-Xp-DAB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="fT4-3t-0mR"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,7 +76,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="v1R-v0-YfA"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="1400" height="0.0"/>
+                                        <size key="value" width="2000" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
@@ -79,11 +87,80 @@
                     <connections>
                         <outlet property="CointosuButton" destination="NZA-fi-tHv" id="Kkf-t1-Ufa"/>
                         <outlet property="SaiKoroKoroButton" destination="yv8-aV-TW8" id="7bG-Bs-7cz"/>
+                        <outlet property="TicTacToeButton" destination="XUW-zL-bK6" id="cbA-7B-CaS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
+        </scene>
+        <!--Metronome View Controller-->
+        <scene sceneID="Bs7-jL-wmW">
+            <objects>
+                <viewController id="pPf-W6-sHH" customClass="MetronomeViewController" customModule="GameCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avO-7z-i27">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sML-qx-tKj">
+                                <rect key="frame" x="30" y="131" width="292" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="每分鐘心跳數 (BPM)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edZ-gL-boW">
+                                <rect key="frame" x="151" y="196" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNN-te-QVl">
+                                <rect key="frame" x="330" y="163" width="64" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="101-170(play)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXn-6x-5Ne">
+                                <rect key="frame" x="351" y="336" width="53" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="QuicklyAction:" destination="pPf-W6-sHH" eventType="touchUpInside" id="nOt-cd-UgQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k45-c0-mUy">
+                                <rect key="frame" x="9" y="326" width="62" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SlowlyAction:" destination="pPf-W6-sHH" eventType="touchUpInside" id="uRe-Mg-pCx"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="40" maxValue="218" translatesAutoresizingMaskIntoConstraints="NO" id="6AJ-YN-ZLL">
+                                <rect key="frame" x="18" y="299" width="368" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" red="0.18732210990000001" green="0.47327631710000001" blue="0.7882717252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="SliderAnction:" destination="pPf-W6-sHH" eventType="valueChanged" id="9wG-dm-Cu7"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cuI-7D-8iv"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pw7-ef-hK1"/>
+                    <connections>
+                        <outlet property="BeatLabel" destination="sML-qx-tKj" id="0b9-2P-LtD"/>
+                        <outlet property="PlayButton" destination="UNN-te-QVl" id="LbK-0e-9BM"/>
+                        <outlet property="TempleQuickly" destination="GXn-6x-5Ne" id="BUs-1I-uPH"/>
+                        <outlet property="TempleSlider" destination="6AJ-YN-ZLL" id="QhJ-g3-18P"/>
+                        <outlet property="TempleSlowly" destination="k45-c0-mUy" id="CKB-ZF-Qc0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jw-GS-xLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="118.52678571428571"/>
         </scene>
         <!--Tic Tac Toe View Controller-->
         <scene sceneID="tmC-Pd-1qd">
@@ -228,7 +305,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="888.40579710144937" y="555.80357142857144"/>
+            <point key="canvasLocation" x="1496" y="-1536"/>
         </scene>
         <!--Saikonkorokoro View Controller-->
         <scene sceneID="h3E-Fa-Mrc">
@@ -343,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcB-bN-L9m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1225" y="-320"/>
+            <point key="canvasLocation" x="851" y="-1536"/>
         </scene>
         <!--FlipA Coin View Controller-->
         <scene sceneID="4Ec-Jq-jI7">
@@ -455,10 +532,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhC-kw-Stt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="-1476"/>
+            <point key="canvasLocation" x="229" y="-1536"/>
         </scene>
     </scenes>
     <resources>
+        <image name="101-170(play)" width="128" height="134"/>
         <image name="coinA" width="692" height="692"/>
         <image name="cointosu" width="1380" height="1370"/>
         <image name="dice01" width="582" height="586"/>
