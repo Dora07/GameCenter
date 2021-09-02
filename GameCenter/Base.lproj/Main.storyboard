@@ -120,6 +120,9 @@
                                 <rect key="frame" x="330" y="163" width="64" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="101-170(play)"/>
+                                <connections>
+                                    <action selector="PlayButtonAction:" destination="pPf-W6-sHH" eventType="touchUpInside" id="sF0-nH-dQg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXn-6x-5Ne">
                                 <rect key="frame" x="351" y="336" width="53" height="55"/>

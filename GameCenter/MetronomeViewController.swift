@@ -1,6 +1,6 @@
 
 import UIKit
-
+import AVFoundation
 class MetronomeViewController: UIViewController
 {
 
@@ -15,12 +15,19 @@ class MetronomeViewController: UIViewController
     @IBOutlet weak var TempleSlider: UISlider!
     
     var SelectedSpeed:Float = 40.0
+    var AudioPlayer = AVAudioPlayer()
+    var IsPlaying = false
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         TempleQuickly.setBackgroundImage(UIImage(named:"40-100(+)"), for: .normal)
         TempleSlowly.setBackgroundImage(UIImage(named:"40-100(-)"), for: .normal)
+        let url : NSURL = Bundle.main.url(forResource: "temple", withExtension: "mp3")! as NSURL; do {
+            AudioPlayer = try AVAudioPlayer(contentsOf: url as URL, fileTypeHint: nil)} catch let error as NSError{ print(error.description)
+        }
+        
+        
     }
     
 
@@ -72,6 +79,15 @@ class MetronomeViewController: UIViewController
         TempleSlowly.setBackgroundImage(UIImage(named:"171-218(-)"), for: .normal)
         }
     }
+    
+
+    @IBAction func PlayButtonAction(_ sender: UIButton)
+    {
+        AudioPlayer.play()
+        
+        
+    }
+    
     
     
     
