@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="eh0-MB-sbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="1858" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="2434" height="400"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-fi-tHv">
@@ -67,6 +67,14 @@
                                                     <segue destination="pPf-W6-sHH" kind="show" id="GD3-Xp-DAB"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fX-pi-kXm">
+                                                <rect key="frame" x="1888" y="-4" width="400" height="400"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <connections>
+                                                    <segue destination="qvl-oR-2BG" kind="showDetail" id="XaF-Tm-qEO"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="fT4-3t-0mR"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -76,7 +84,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="v1R-v0-YfA"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="2000" height="0.0"/>
+                                        <size key="value" width="2600" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
@@ -86,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="CointosuButton" destination="NZA-fi-tHv" id="Kkf-t1-Ufa"/>
+                        <outlet property="MetronomeButton" destination="w5h-Ef-WNS" id="9HU-I7-maK"/>
                         <outlet property="SaiKoroKoroButton" destination="yv8-aV-TW8" id="7bG-Bs-7cz"/>
                         <outlet property="TicTacToeButton" destination="XUW-zL-bK6" id="cbA-7B-CaS"/>
                     </connections>
@@ -161,7 +170,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jw-GS-xLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714.49275362318849" y="118.52678571428571"/>
+            <point key="canvasLocation" x="2149" y="-1536"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ss-Om-Fgc">
+            <objects>
+                <viewController id="qvl-oR-2BG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VHv-1Z-Wv4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PIl-So-fQY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfI-90-hOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="88"/>
         </scene>
         <!--Tic Tac Toe View Controller-->
         <scene sceneID="tmC-Pd-1qd">

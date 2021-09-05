@@ -8,6 +8,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var SaiKoroKoroButton: UIButton!
     //圈圈叉叉
     @IBOutlet weak var TicTacToeButton: UIButton!
+    //節拍器
+    @IBOutlet weak var MetronomeButton: UIButton!
     
     
     override func viewDidLoad() {
