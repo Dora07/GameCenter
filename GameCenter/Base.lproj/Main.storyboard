@@ -172,20 +172,20 @@
             </objects>
             <point key="canvasLocation" x="2149" y="-1536"/>
         </scene>
-        <!--View Controller-->
+        <!--Spinner View Controller-->
         <scene sceneID="8ss-Om-Fgc">
             <objects>
-                <viewController id="qvl-oR-2BG" sceneMemberID="viewController">
+                <viewController id="qvl-oR-2BG" customClass="SpinnerViewController" customModule="GameCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VHv-1Z-Wv4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spinner4" translatesAutoresizingMaskIntoConstraints="NO" id="Mdh-jQ-s0G">
-                                <rect key="frame" x="54" y="191" width="348" height="350"/>
+                                <rect key="frame" x="77" y="191" width="348" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rER-s9-Cnz">
-                                <rect key="frame" x="164" y="340" width="116" height="52"/>
+                                <rect key="frame" x="193" y="340" width="116" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
@@ -199,20 +199,14 @@
                                     <segment title="8"/>
                                     <segment title="12"/>
                                 </segments>
+                                <connections>
+                                    <action selector="ChangeSpinnerAction:" destination="qvl-oR-2BG" eventType="valueChanged" id="nzO-Yw-Xph"/>
+                                </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpinnerPoint" translatesAutoresizingMaskIntoConstraints="NO" id="u9a-1i-oiT">
-                                <rect key="frame" x="-94" y="333" width="185" height="66"/>
+                                <rect key="frame" x="-68" y="333" width="163" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-1s-Wd9">
-                                <rect key="frame" x="171" y="580" width="95" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="GO">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スピナー" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22g-iY-bdT">
                                 <rect key="frame" x="57" y="60" width="322" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -223,10 +217,23 @@
                                 <color key="shadowColor" red="0.3398712277" green="0.57470798489999997" blue="0.91768723730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="0.0" height="3"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-1s-Wd9">
+                                <rect key="frame" x="193" y="573" width="95" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PIl-So-fQY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ChangeSpinner" destination="SLh-js-CPM" id="FXv-Si-v0L"/>
+                        <outlet property="SpinnerImage" destination="Mdh-jQ-s0G" id="rST-IV-ex8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfI-90-hOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -607,7 +614,7 @@
     </scenes>
     <resources>
         <image name="Spinner4" width="890" height="848"/>
-        <image name="SpinnerPoint" width="270" height="92"/>
+        <image name="SpinnerPoint" width="222" height="58"/>
         <image name="coinA" width="692" height="692"/>
         <image name="cointosu" width="1380" height="1370"/>
         <image name="dice01" width="582" height="586"/>
