@@ -8,6 +8,7 @@ class SpinnerImageUIImageView: UIImageView
     func RotateGradually(handler:@escaping(String)->())
     {
         var Result = ""
+      
         //// 產生0~2pi隨機的Double數字,也就是0~360度。
         let RandomDouble = Double.random(in: 0..<2 * Double.pi)
         let RotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
@@ -22,29 +23,29 @@ class SpinnerImageUIImageView: UIImageView
         
         //依照不同角度判斷轉到區塊
         switch Degree{
-                    case 0..<30:
+                    case 240..<270:
                     Result="1"
-                    case 30..<60:
+                    case 210..<240:
                     Result="2"
-                    case 60..<90:
+                    case 180..<210:
                     Result="3"
-                    case 90..<120:
+                    case 150..<180:
                     Result="4"
                     case 120..<150:
                     Result="5"
-                    case 150..<180:
+                    case 90..<120:
                     Result="6"
-                    case 180..<210:
+                    case 60..<90:
                     Result="7"
-                    case 210..<240:
+                    case 30..<60:
                     Result="8"
-                    case 240..<270:
+                    case 0..<30:
                     Result="9"
-                    case 270..<300:
+                    case 333..<360:
                     Result="10"
                     case 300..<330:
                     Result="11"
-                    case 333..<360:
+                    case 270..<300:
                     Result="12"
                     default:
                     Result="未知"
