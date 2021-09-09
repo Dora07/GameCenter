@@ -20,6 +20,7 @@
 		86B0744F26C6AEF400EE93D2 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0744E26C6AEF400EE93D2 /* MetronomeViewController.swift */; };
 		86B0745726E0C49200EE93D2 /* temple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 86B0745626E0C49200EE93D2 /* temple.mp3 */; };
 		86B0745C26E65C8500EE93D2 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0745B26E65C8500EE93D2 /* SpinnerViewController.swift */; };
+		86B0746626E8DA8A00EE93D2 /* SpinnerImageUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0746526E8DA8A00EE93D2 /* SpinnerImageUIImageView.swift */; };
 		86EBA2DB26A802F600157BEE /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */; };
 		86EBA2F726A9D1AD00157BEE /* TicTacToeDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2F626A9D1AD00157BEE /* TicTacToeDrawView.swift */; };
 		86EBA2FC26AABEF300157BEE /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBA2FB26AABEF300157BEE /* InfoView.swift */; };
@@ -63,6 +64,7 @@
 		86B0744E26C6AEF400EE93D2 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		86B0745626E0C49200EE93D2 /* temple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = temple.mp3; sourceTree = "<group>"; };
 		86B0745B26E65C8500EE93D2 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		86B0746526E8DA8A00EE93D2 /* SpinnerImageUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerImageUIImageView.swift; sourceTree = "<group>"; };
 		86EBA2DA26A802F600157BEE /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		86EBA2F626A9D1AD00157BEE /* TicTacToeDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeDrawView.swift; sourceTree = "<group>"; };
 		86EBA2FB26AABEF300157BEE /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				86EBA30026B92FA200157BEE /* Grid.swift */,
 				86B0744E26C6AEF400EE93D2 /* MetronomeViewController.swift */,
 				86B0745B26E65C8500EE93D2 /* SpinnerViewController.swift */,
+				86B0746526E8DA8A00EE93D2 /* SpinnerImageUIImageView.swift */,
 				869036A52675C71900BC5141 /* Main.storyboard */,
 				86B0745626E0C49200EE93D2 /* temple.mp3 */,
 				869036A82675C71A00BC5141 /* Assets.xcassets */,
@@ -296,6 +299,7 @@
 				869036A22675C71900BC5141 /* SceneDelegate.swift in Sources */,
 				86B0744F26C6AEF400EE93D2 /* MetronomeViewController.swift in Sources */,
 				867719E426A0858600C56EA7 /* SaikonkorokoroViewController.swift in Sources */,
+				86B0746626E8DA8A00EE93D2 /* SpinnerImageUIImageView.swift in Sources */,
 				86EBA30126B92FA300157BEE /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@ class SpinnerViewController: UIViewController
     @IBOutlet weak var ChangeSpinner: UISegmentedControl!
     //輪盤Image
     @IBOutlet weak var SpinnerImage: UIImageView!
-    
+    @IBOutlet weak var SpinnerImageView :SpinnerImageUIImageView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -36,6 +36,18 @@ class SpinnerViewController: UIViewController
     }
     
     
+    @IBAction func SpinnerAction(_ sender: UIButton)
+    {
+        SpinnerImageView.RotateGradually
+        {
+          Result in
+            let ALertContoller = UIAlertController(title: "你轉到了\(Result)區塊", message: nil, preferredStyle: .alert)
+            let OkAction = UIAlertAction(title: "確認", style: .cancel, handler: nil)
+            ALertContoller.addAction(OkAction)
+            self.present(ALertContoller, animated: true)
+        }
+        
+    }
     
     
     
