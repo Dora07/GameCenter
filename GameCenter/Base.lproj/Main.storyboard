@@ -31,11 +31,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="eh0-MB-sbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="2434" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="2100" height="400"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-fi-tHv">
-                                                <rect key="frame" x="20" y="-1" width="400" height="400"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="420" height="400"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="Cointosubutton"/>
                                                 <state key="normal" title="Button" image="cointosu"/>
@@ -43,36 +43,36 @@
                                                     <segue destination="qhX-BX-4Xs" kind="show" id="rlN-gc-ggZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv8-aV-TW8">
-                                                <rect key="frame" x="479" y="-2" width="400" height="400"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="cointosu"/>
-                                                <connections>
-                                                    <segue destination="EIS-AG-xTw" kind="show" id="zAd-qN-JSL"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-zL-bK6">
-                                                <rect key="frame" x="955" y="-3" width="400" height="400"/>
+                                                <rect key="frame" x="840" y="0.0" width="420" height="400"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <state key="normal" title="Button" image="TikTacToe"/>
                                                 <connections>
                                                     <segue destination="k46-wA-Vaj" kind="show" id="5Up-yD-VMl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5h-Ef-WNS">
-                                                <rect key="frame" x="1427" y="0.0" width="400" height="400"/>
+                                                <rect key="frame" x="1260" y="0.0" width="420" height="400"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <state key="normal" title="Button" image="Metronome"/>
                                                 <connections>
                                                     <segue destination="pPf-W6-sHH" kind="show" id="GD3-Xp-DAB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fX-pi-kXm">
-                                                <rect key="frame" x="1888" y="-4" width="400" height="400"/>
+                                                <rect key="frame" x="1680" y="0.0" width="420" height="400"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="cointosu"/>
+                                                <state key="normal" title="Button" image="SpinnerImage"/>
                                                 <connections>
                                                     <segue destination="qvl-oR-2BG" kind="showDetail" id="XaF-Tm-qEO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv8-aV-TW8">
+                                                <rect key="frame" x="420" y="0.0" width="420" height="400"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="saikorokoro"/>
+                                                <connections>
+                                                    <segue destination="EIS-AG-xTw" kind="show" id="zAd-qN-JSL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -84,7 +84,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="v1R-v0-YfA"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="2600" height="0.0"/>
+                                        <size key="value" width="2100" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
@@ -96,6 +96,7 @@
                         <outlet property="CointosuButton" destination="NZA-fi-tHv" id="Kkf-t1-Ufa"/>
                         <outlet property="MetronomeButton" destination="w5h-Ef-WNS" id="9HU-I7-maK"/>
                         <outlet property="SaiKoroKoroButton" destination="yv8-aV-TW8" id="7bG-Bs-7cz"/>
+                        <outlet property="SpinnerButton" destination="3fX-pi-kXm" id="Tge-hG-GQ0"/>
                         <outlet property="TicTacToeButton" destination="XUW-zL-bK6" id="cbA-7B-CaS"/>
                     </connections>
                 </viewController>
@@ -219,7 +220,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PIl-So-fQY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="SpinnerImageView" destination="Mdh-jQ-s0G" id="Kja-AX-ECm"/>
@@ -603,12 +604,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Metronome" width="696" height="660"/>
         <image name="Spinner12" width="820" height="790"/>
+        <image name="SpinnerImage" width="562" height="566"/>
         <image name="SpinnerPoint" width="222" height="58"/>
+        <image name="TikTacToe" width="606" height="572"/>
         <image name="coinA" width="692" height="692"/>
         <image name="cointosu" width="1380" height="1370"/>
         <image name="dice01" width="582" height="586"/>
         <image name="gamearcadecontroler" width="400" height="312"/>
+        <image name="saikorokoro" width="1064" height="976"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -617,6 +622,9 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

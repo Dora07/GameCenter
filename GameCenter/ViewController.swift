@@ -10,7 +10,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var TicTacToeButton: UIButton!
     //節拍器
     @IBOutlet weak var MetronomeButton: UIButton!
-    
+    //轉盤
+    @IBOutlet weak var SpinnerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
